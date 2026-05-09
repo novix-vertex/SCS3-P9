@@ -15,7 +15,7 @@
 }
 
 @font-face {
-    font-family: cormorant;
+    font-family: cormorangat;
     src: url("assets/fonts/cormorant.woff2");
 }
 
@@ -23,7 +23,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: helvetica;
+    font-family: poppins;
 }
 
 html,
@@ -35,4 +35,81 @@ body {
 main {
     height: 100%;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left,
+.right {
+    width: 50%;
+    height: 100%;
+}
+
+.left {
+    background: var(--bg-color);
+}
+
+.right {
+    background: var(--bg-color2);
+}
+
+.left nav{
+    height:60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:4rem;
+    padding-inline: 2rem;
+    padding-block: 0.5rem;
+}
+.left nav h1{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+.left nav .search{
+    background:var(--bg-color4);
+    border-radius: 2rem;
+    padding-inline: 1rem;
+    padding-block: 0.2rem;
+}
+.left nav .search input{
+    border:none;
+    background:transparent;
+    margin-left: 0.5rem;
+}
+
+.classification-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width:50%;
+}
+
+.classification-section h2 {
+    font-family: cormorangat;
+    font-size: 4rem;
+    font-weight: 500;
+    font-style: italic;
+    transform: rotate(270deg);
+}
+.classification-section ul li{
+    padding-block: 1rem;
+}
+.classification-section ul li::marker{
+    color:var(--bg-color2);
+}
+
+
+
+.center-attraction {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+
+    height: 70vh;
+    width: auto;
 }
